@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    background-color: #f5f5f7;
+    border-bottom: 1px solid #d2d2d7;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #6e6e73;
+}
+
+
+
+
+/* Scrollable Product Section 1 */
+.pproduct-scroll-wrapper {
+    position: relative;
+    padding: 4rem 0;
+    background: linear-gradient(145deg, #f5f5f7 0%, #e5e5ec 100%);
+    overflow: hidden;
+}
+
+.pproducts.scrollable {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.pproduct-card {
+    flex: 0 0 auto;
+    width: 280px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    padding: 1.2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pproduct-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pproduct-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.pproduct-card h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.pproduct-card p {
+    color: #6e6e73;
+    font-size: 0.95rem;
+}
+
+.sscroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.sscroll-btn:hover {
+    background: rgba(222, 213, 213, 0.8);
+}
+
+.sscroll-btn span svg,
+.sscroll-btn i {
+    font-size: 1.5rem;
+    color: #1d1d1f;
+}
+
+.sscroll-btn.left {
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.sscroll-btn.right {
+    right: 10px;
+}
+
+
+
+
+
+/* Scrollable Product Section 2 */
+.product-scroll-wrapper {
+    position: relative;
+    padding: 4rem 0;
+    background: linear-gradient(145deg, #f5f5f7 0%, #e5e5ec 100%);
+    overflow: hidden;
+}
+
+.products.scrollable {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 280px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    padding: 1.2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.product-card h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    color: #6e6e73;
+    font-size: 0.95rem;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: rgba(222, 213, 213, 0.8);
+}
+
+.scroll-btn span svg,
+.scroll-btn i {
+    font-size: 1.5rem;
+    color: #1d1d1f;
+}
+
+.scroll-btn.left {
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+/* footer */
+footer{
+    /* align-items: center; */
+    height: 967px;
+    /* width: 100vw; */
+    background-color: #e8e8ed;
+    /* opacity: 0.36; */
+    color: #9d9da4;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0px 250px 0px 220px;
+    
+}
+
+.footer1 a{
+    color: #6b6b71;
+}
+
+.footer1 .text1{
+    padding-bottom: 10px;
+    color: #9d9da4;
+}
+
+.footer1 .text2{
+    padding-bottom: 10px;
+    color: #9d9da4;
+}
+
+.footer1 .text3{
+    padding-bottom: 10px;
+    color: #9d9da4;
+}
+
+.footer1 .text4{
+    padding-bottom: 10px;
+    color: #9d9da4;
+}
+
+.footer3{
+    border-top: 1px solid rgba(0, 0, 0, 0.222);
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-left: 30px;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 250px 0px 250px;
+}
+.panel1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel2{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.panel3{
+    display: flex;
+    justify-content: end;
+}
+
+.panel2 li{
+    list-style: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.panel2 li:hover{
+    text-decoration: underline;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.panel3 li{
+    list-style: none;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.footer2{
+    line-height: 189%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 250px 0px 250px;
+    cursor: default;
+}
+
+.footer2 a:hover{
+    text-decoration: underline;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: #9d9da4;
+}
+
+.sub-footer1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-footer2{
+    position: relative;
+    top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-footer3{
+    position: relative;
+    top: -48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-footer4{
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-footer5{
+    position: relative;
+    top: 7px;
+    display: flex;
+    flex-direction: column;
+}
+/* footer end */
