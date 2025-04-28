@@ -365,3 +365,100 @@ footer{
 /* footer end */
 
 
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+	body {
+		font-size: 90%;
+	}
+
+	header {
+		padding: 0.6rem;
+	}
+
+	nav {
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	nav a {
+		font-size: 0.75rem;
+	}
+
+	.hero {
+		padding: 3rem 1rem 1rem;
+	}
+
+	.hero h1 {
+		font-size: 1.5rem;
+	}
+
+	.hero p {
+		font-size: 0.9rem;
+	}
+
+	.pproducts.scrollable,
+	.products.scrollable {
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.pproduct-card,
+	.product-card {
+		width: 220px;
+		padding: 1rem;
+	}
+
+	.pproduct-card img,
+	.product-card img {
+		height: 180px;
+	}
+
+	.sscroll-btn,
+	.scroll-btn {
+		padding: 0.5rem;
+	}
+
+	.sscroll-btn span svg,
+	.sscroll-btn i,
+	.scroll-btn span svg,
+	.scroll-btn i {
+		font-size: 1.2rem;
+	}
+
+	footer {
+		height: auto;
+		padding: 2rem 1rem;
+	}
+
+	.footer1 {
+		margin: 0 1rem;
+		padding: 1rem;
+	}
+
+	.footer2 {
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 2rem 1rem 0 1rem;
+		gap: 1rem;
+	}
+
+	.footer3 {
+		margin: 2rem 1rem 0 1rem;
+		padding-left: 0;
+	}
+
+	.panel2, .panel3 {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.panel3 li {
+		padding-left: 0;
+	}
+
+	.sub-footer2, .sub-footer3, .sub-footer4, .sub-footer5 {
+		position: static;
+	}
+
+}
