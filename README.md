@@ -3,7 +3,7 @@
 
 A responsive Apple Store frontend clone built using HTML, CSS, and JavaScript. This project is a static recreation of Apple's official store UI, designed to sharpen frontend skills and replicate a clean, modern layout.
 
-![Screenshot](./screenshots/homepage.png)
+![Screenshot](./screenshots.png)
 
 ## 🚀 Features
 
